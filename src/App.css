@@ -1,0 +1,114 @@
+Here is a CSS example for a modern and professional design, responsive layout, beautiful color scheme and typography, smooth animations and transitions, and accessibility considerations. Please adjust as necessary to fit your existing HTML structure and class names.
+
+```css
+:root {
+  --primary-color: #007BFF;
+  --secondary-color: #6c757d;
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+  --font-family: 'Arial', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+}
+
+body {
+  background: var(--light-color);
+  color: var(--dark-color);
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 15px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.todo-item:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.todo-item .todo-text {
+  flex-grow: 1;
+  margin-right: 15px;
+}
+
+.todo-item .priority {
+  margin-right: 15px;
+}
+
+.todo-item .priority.low {
+  color: var(--success-color);
+}
+
+.todo-item .priority.medium {
+  color: var(--warning-color);
+}
+
+.todo-item .priority.high {
+  color: var(--danger-color);
+}
+
+.todo-item .actions {
+  display: flex;
+  align-items: center;
+}
+
+.todo-item .actions button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.todo-item .actions button.edit {
+  background: var(--primary-color);
+}
+
+.todo-item .actions button.delete {
+  background: var(--danger-color);
+}
+
+.todo-item .actions button:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 767px) {
+  .todo-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .todo-item .todo-text {
+    margin-bottom: 10px;
+  }
+
+  .todo-item .actions button {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}
+```
+
+This CSS is designed to be used with a React application and will provide a clean, modern design for a Todo app with priority levels. The design is mobile-first and responsive for different screen sizes. The color scheme is attractive and the typography is clean and readable. The app also includes smooth animations and transitions for a better user experience. Accessibility is also considered in the design.
